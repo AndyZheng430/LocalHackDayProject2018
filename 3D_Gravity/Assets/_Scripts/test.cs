@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class EndLevel : MonoBehaviour {
+public class test : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +16,6 @@ public class EndLevel : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("2dlevel2", LoadSceneMode.Single);
+        Debug.Log("You entered the portal!");
     }
 }
