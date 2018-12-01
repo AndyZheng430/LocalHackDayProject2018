@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EndLevel : MonoBehaviour {
+public class EndLevel1 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +17,6 @@ public class EndLevel : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("2dlevel2", LoadSceneMode.Single);
+        SceneManager.LoadScene("level2", LoadSceneMode.Single);
     }
 }
