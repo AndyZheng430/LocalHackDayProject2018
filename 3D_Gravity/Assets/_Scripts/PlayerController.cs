@@ -15,16 +15,16 @@ public class PlayerController : MonoBehaviour {
          Gravity change in a single direction for all objects including player
          */
         if (Input.GetKey(KeyCode.UpArrow)) {
-            Physics.gravity = new Vector3(0f, 3f);
+            Physics.gravity = new Vector3(0f, 3f, 0f);
         }
         if (Input.GetKey(KeyCode.DownArrow)) {
-            Physics.gravity = new Vector3(0f, -3f);
+            Physics.gravity = new Vector3(0f, -3f, 0f);
         }
         if (Input.GetKey(KeyCode.LeftArrow)) {
-            Physics.gravity = new Vector3(-3f, 0f);
+            Physics.gravity = new Vector3(-3f, 0f, 0f);
         }
         if (Input.GetKey(KeyCode.RightArrow)) {
-            Physics.gravity = new Vector3(3f, 0f);
+            Physics.gravity = new Vector3(3f, 0f, 0f);
         }
 	}
 
