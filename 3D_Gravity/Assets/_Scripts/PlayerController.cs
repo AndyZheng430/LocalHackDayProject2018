@@ -15,20 +15,20 @@ public class PlayerController : MonoBehaviour {
          Gravity change in a single direction for all objects including player
          */
         if (Input.GetKey(KeyCode.UpArrow)) {
-            Physics.gravity = new Vector3(0f, 3f, 0f);
+            
+            Physics2D.gravity = new Vector2(0f, 3f);
         }
         if (Input.GetKey(KeyCode.DownArrow)) {
-            Physics.gravity = new Vector3(0f, -3f, 0f);
+            Physics2D.gravity = new Vector2(0f, -3f);
         }
         if (Input.GetKey(KeyCode.LeftArrow)) {
-            Physics.gravity = new Vector3(-3f, 0f, 0f);
+            Physics2D.gravity = new Vector2(-3f, 0f);
         }
         if (Input.GetKey(KeyCode.RightArrow)) {
-            Physics.gravity = new Vector3(3f, 0f, 0f);
+            Physics2D.gravity = new Vector2(3f, 0f);
         }
 	}
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("shrink")) {
             gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
