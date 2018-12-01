@@ -7,6 +7,7 @@ TagManager:
   - shrink
   - expand
   - regular
+  - portal
   layers:
   - Default
   - TransparentFX
